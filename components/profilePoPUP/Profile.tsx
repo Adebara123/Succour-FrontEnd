@@ -45,7 +45,9 @@ const JoinModal = ({ showProfileModal, setShowProfileModal } : IProps) => {
           <div className={styles.profile} ref={modalRef} onClick={closeModal}>
                {/* animating the whole container properties*/}
                 <animated.div style={animation}>
-               <div className={styles.wrapper}  showProfileModal={showProfileModal}>
+               <div className={styles.wrapper} 
+                // showProfileModal={showProfileModal}
+                >
                      <div className={styles.closeButton} onClick={() => setShowProfileModal((prev : any) => !prev)}></div>
                     <div className={styles.container}>
                          <div className={styles.profile_content}>

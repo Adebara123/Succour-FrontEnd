@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const NavbarContainer = styled.nav`
+export const NavbarContainer = styled.nav<{ click?: any }>`
  position: fixed;
  width: 100%;
  height: ${(props) => (props.click ? "100vh" : "105px" )};

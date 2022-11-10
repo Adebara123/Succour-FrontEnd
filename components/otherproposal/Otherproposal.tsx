@@ -19,12 +19,12 @@ const Otherproposal = () => {
                 <h1 className={styles.title}>Other proposals</h1>
                </div>
 
-                <Link href={`/ProposePage/${id}`}>
                <div className={styles.otherproposal_content}>
                             {
                     data?.slice(0, visible)?.map(({ id, time, title, address, type, problem }) => {
                        return (
                     <div className={styles.otherproposal_item} key={id}>
+                <Link href={`/ProposePage/${id}`}>
                     <div className={styles.otherproposal_text}>
                       <h2 className={styles.item_title}>{title}</h2>
                        <p className={styles.item_address}>{address}</p>
@@ -35,12 +35,12 @@ const Otherproposal = () => {
                          <span className={styles.time}>{time}</span>
                      </div>
                     </div>
+               </Link>
                     </div>
                       )
                            })
                          }
                </div>
-               </Link>
                 <div className={styles.viewmore_center}>
                 <button onClick={handleMoreProjectItem}
                 className={styles.viewmore_btn}

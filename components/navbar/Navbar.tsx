@@ -53,7 +53,7 @@ const Navbar = () => {
     <>
     {/* Profile Modal pop up */}
     <Profile showProfileModal={showProfileModal} setShowProfileModal={setShowProfileModal} />
-
+  {/* @ts-ignore */}
     <NavbarContainer click={click}>
         {/* Modal component is here */}
       <JoinDao showModal={showModal} setShowModal={setShowModal} />

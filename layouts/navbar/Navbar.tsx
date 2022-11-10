@@ -34,6 +34,7 @@ const Navbar = () => {
 
 return (
   <>
+  {/* @ts-ignore */}
   <NavbarContainer click={click}>
       {/* Modal component is here */}
     {/* <JoinDao showModal={showModal} setShowModal={setShowModal} /> */}
