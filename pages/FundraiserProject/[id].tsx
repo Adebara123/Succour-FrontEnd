@@ -63,7 +63,7 @@ const FundraiserProject = () => {
     <div className={styles.wrapper}>
         <div className={styles.left_arrow}>
               <div className={styles.back_arrow}>
-              <Link href="/Viewmore/Viewmore">
+              <Link href="/Viewmore">
               <div className={styles.arrow}>
                   <Image src={arrowLeftSvg} alt="" />
               </div>
