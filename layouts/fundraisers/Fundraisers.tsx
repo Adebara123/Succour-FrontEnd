@@ -41,7 +41,7 @@ const Projects = () => {
                             <span className={styles.title}>Some fundraisers</span>
                             <div className={styles.totheright}>
 
-                                <Link href="/Viewmore/Viewmore">
+                                <Link href="/Viewmore">
                                   <div className={styles.controller_right}>View all</div>
                                 </Link>
                               <div  className={styles.icon}>

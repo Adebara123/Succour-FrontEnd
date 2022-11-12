@@ -42,21 +42,18 @@ const Projects = () => {
       color: "white"
     }
 
-
-
     return (
           <section className={styles.projects}>
               <div className={styles.wrapper}>
+                  <div className={styles.project_header}>
+                  <span className={styles.title}>Projects</span>
+                  <div className={styles.totheright}>
+                    <div className={styles.controller_left} onClick={()=> setDisplayProposal(true)}>All proposals</div>
+                    <div className={styles.controller_right} onClick={()=> setDisplayProposal(false)}>Approved proposals</div>
+                  </div>
+                </div>
                   <div className={styles.container}>
                   <div className={styles.project_container}>
-                            <div className={styles.project_header}>
-                            <span className={styles.title}>Projects</span>
-                            <div className={styles.totheright}>
-                              <div className={styles.controller_left} onClick={()=> setDisplayProposal(true)}>All proposals</div>
-                              <div className={styles.controller_right} onClick={()=> setDisplayProposal(false)}>Approved proposals</div>
-                            </div>
-                          </div>
-
                 {
                   displayProposal ? (
                         <div className={styles.project_grid}>

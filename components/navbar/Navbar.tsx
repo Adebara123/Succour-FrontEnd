@@ -67,7 +67,7 @@ const Navbar = () => {
           <RightContainer>
           <NavbarLinkContainer>
               <Link href="/dao"><NavbarLink>DAO</NavbarLink></Link>
-              <Link href="/Projects/Projects"><NavbarLink>Projects</NavbarLink></Link>
+              <Link href="/Projects"><NavbarLink>Projects</NavbarLink></Link>
               <NavbarLink 
               onClick={openModal}
               >
@@ -188,7 +188,7 @@ const Navbar = () => {
       { click &&  (
       <NavbarExtendedContainer>
         <NavbarLinkExtended><Link href="/dao">DAO</Link></NavbarLinkExtended>
-        <NavbarLinkExtended><Link href="/Projects/Projects">Projects</Link></NavbarLinkExtended>
+        <NavbarLinkExtended><Link href="/Projects">Projects</Link></NavbarLinkExtended>
         <NavbarLinkExtended onClick={openModal}>Join DAO</NavbarLinkExtended>
         <NavbarLinkExtended><Link href="/Crowdfunding"><NavbarButtonExtended>Crowdfunding</NavbarButtonExtended></Link></NavbarLinkExtended>
         <NavbarUserExtended>
