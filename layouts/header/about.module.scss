@@ -1,8 +1,7 @@
 
 
 .hero {
-   padding-top: 120px;
-   padding-bottom: 120px;
+   padding: 80px 0 37px;
    position: relative;
    background: #0E0D0D;
 
@@ -27,25 +26,25 @@
     margin: 0 auto;
     max-width: calc(100% - 2.875rem);
     width: 100%;
- 
+
     @media (min-width: 1024px) {
-     max-width: calc(100% - 7.5rem);
+      max-width: calc(100% - 7.5rem);
     }
 
     @media (min-width: 480px) {
-     max-width: calc(100% - 3.75rem);
-   }
+      max-width: calc(100% - 3.75rem);
+    }
 
-   
+  
 
    .container {
-      display: flex;
+     display: flex;
      justify-content: center;
      align-items: center;
      padding-left: 100px;
      padding-right: 100px;
-     padding-top: 100px;    
-
+     padding-top: 100px;
+    
      .banner__container {
       display: flex;
       align-items: center;

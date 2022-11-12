@@ -10,6 +10,7 @@ import Succour_abi from "../../abi/abi.json"
 import { ethers } from 'ethers'
 import ERC20_ABI from "../../abi/ERC20.json"
 import { useRouter } from 'next/router'
+import { ToastContainer, toast } from 'react-toastify'
 
 interface IProps {
      showModal: any;
@@ -104,10 +105,16 @@ const DonateModal = ({ showModal, setShowModal } : IProps) => {
         onSuccess(){
           route.push("/Crowdfunding")
           // add toastify; input: Deposit Successful
+               toast.success('Donate Successful', {
+              position: toast.POSITION.TOP_RIGHT,
+              autoClose: 8000
+              })
         },
         onError(data){
           console.log(data)
           // add toastify; input: Unable to deposit
+                toast.error('Unable to donate', 
+              { position: toast.POSITION.TOP_CENTER })
         }
       })
 

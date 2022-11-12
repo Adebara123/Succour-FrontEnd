@@ -171,7 +171,7 @@ const Navbar = () => {
              </Connection>
              {/* End of Custom Connection Button */}
               <NavbarUser>
-              <TiUserOutline color="white" fontSize="1.5rem" onMouseOver={openProfileModal} />
+              <TiUserOutline color="white" fontSize="1.5rem" onClick={openProfileModal} />
               </NavbarUser>
               <OpenLinksButton
                 onClick={() => {setClick((curr : any) => !curr);
@@ -192,7 +192,7 @@ const Navbar = () => {
         <NavbarLinkExtended onClick={openModal}>Join DAO</NavbarLinkExtended>
         <NavbarLinkExtended><Link href="/Crowdfunding"><NavbarButtonExtended>Crowdfunding</NavbarButtonExtended></Link></NavbarLinkExtended>
         <NavbarUserExtended>
-          <TiUserOutline color="white" fontSize="1.5rem" />
+          <TiUserOutline color="white" fontSize="1.5rem" onClick={openProfileModal} />
         </NavbarUserExtended>
       </NavbarExtendedContainer>
       )}

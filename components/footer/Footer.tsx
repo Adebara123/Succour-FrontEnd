@@ -13,13 +13,17 @@ const Footer = () => {
                <div className={styles.wrapper}>
                     <div className={styles.container}>
                          <div className={styles.footer_menu}>
+                              
+                            <div>
                               <div className={styles.footer_title}>
                                    Stay connected on future releases and events
                               </div>
-                              <button className={styles.button}>Coming Soon</button>
-                         </div>
-                     <div className={styles.footer_social}>
+                               <button className={styles.button}>Coming Soon</button>
+                              </div>
 
+ 
+                       <div className={styles.footer_social}>
+                         <div>
                           <Link href="#">
                            <div className={styles.social_item}>
                             <Image src={DiscordIcon} alt="Discord" />
@@ -31,7 +35,9 @@ const Footer = () => {
                           <Image src={LinkdedInIcon} alt="Discord" />
                           </div>
                           </Link> 
+                          </div>
 
+                          <div>
                          <Link href="#">
                            <div className={styles.social_item}>
                           <Image src={DiscordWhiteIcon} alt="Discord" />
@@ -43,6 +49,7 @@ const Footer = () => {
                           <Image src={LinkededInWhiteIcon} alt="Discord" />
                           </div>
                           </Link> 
+                          </div>
                         </div>
 
                         <div className={styles.footer_link}>
@@ -54,8 +61,11 @@ const Footer = () => {
                            <Link href="/Crowdfunding"><span className={styles.link}>Funding</span></Link>
                            </div>
                         </div>
+
+
                     </div>
                </div>
+          </div>          
           </div>
      )
 }

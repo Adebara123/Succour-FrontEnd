@@ -12,8 +12,6 @@ import { useContractRead } from 'wagmi'
 import { useRouter } from 'next/router'
 import Succour_abi from "../../abi/abi.json"
 
-
-
 const ProposePage = () => {
   const SuccourAddress = "0x122e768c3E676dba4905959f89a7056A5053D839"
 
