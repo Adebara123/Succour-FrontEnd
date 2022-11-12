@@ -1,13 +1,11 @@
 import {useState} from 'react'
-import styles from '../pages/Viewmore/viewmore.module.scss'
+import styles from './viewmore.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import { data } from '../../layouts/data'
 import arrowRightIcon from '../../assets/arrow-right-1.svg'
-import Succour_abi from "../abi/abi.json"
+import Succour_abi from "../../abi/abi.json"
 import { useContractRead } from 'wagmi'
-import Navbar from '../layouts/navbar/Navbar'
-import Footer from '../layouts/footer/Footer'
 
 const Projects = () => {
   const SuccourAddress = "0x122e768c3E676dba4905959f89a7056A5053D839"
@@ -36,8 +34,6 @@ const Projects = () => {
     }
 
     return (
-      <div>
-       <Navbar />
           <section className={styles.fundraiser} id="fundraiser">
               <div className={styles.wrapper}>
                   <div className={styles.container}>
@@ -99,8 +95,6 @@ const Projects = () => {
                   </div>
               </div>
         </section>
-        <Footer />
-        </div>
     )
 }
 

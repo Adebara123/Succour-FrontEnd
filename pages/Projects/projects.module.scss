@@ -63,6 +63,8 @@
      display: flex;
      justify-content: center;
      align-items: center;
+     padding-left: 80px;
+     padding-right: 100px;
      padding-top: 100px;
 
      .projects_content {
@@ -79,9 +81,9 @@
         text-align: center;
         color: #FFFEFE;
 
-        @media (max-width: 43.75em) {
-          font-size: 30px;
-       }
+        @media(max-width: 600px) {
+           font-size: 30px;
+        }
 
        }
 
@@ -95,17 +97,16 @@
          color: #FFFEFE;
 
          
-       @media (max-width: 43.75em) {
-          font-size: 16px;
-       }
-
+         @media(max-width: 600px) {
+           font-size: 16px;
+        }
        }
 
        .btn {
           margin-top: 40px;
           background: #804D80;
           border: none;
-          padding: 1rem;
+          padding: 10px 50px;
           border-radius: 30px;
           font-weight: 500;
           font-size: 18px;
@@ -118,13 +119,11 @@
              background: #AA78AA;
              color: #FFFEFE;
           }
-
-         @media (max-width: 43.75em) {
-          font-size: 14px;
-          text-align: center;
-       }
-
        }
      }
    }
+
+
+
+   
 }

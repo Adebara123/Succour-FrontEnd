@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
-import styles from '../pages/Projects/projects.module.scss'
-import Navbar from '../components/navbar/Navbar'
-import Footer from '../components/footer/Footer'
-import ProjectsDetail from '../components/projects/Projects'
+import styles from './projects.module.scss'
+import Navbar from '../../components/navbar/Navbar'
+import Footer from '../../components/footer/Footer'
+import ProjectsDetail from '../../components/projects/Projects'
 
 const Projects = () => {
    return (

@@ -12,6 +12,8 @@ import { useContractRead } from 'wagmi'
 import { useRouter } from 'next/router'
 import Succour_abi from "../../abi/abi.json"
 
+
+
 const ProposePage = () => {
   const SuccourAddress = "0x122e768c3E676dba4905959f89a7056A5053D839"
 
@@ -28,6 +30,7 @@ const ProposePage = () => {
 
   const hexToDecimal = (hex:any) => parseInt(hex, 16);
 
+
   return (
   <>
     <Navbar />
@@ -36,7 +39,7 @@ const ProposePage = () => {
     <div className={styles.wrapper}>
         <div className={styles.left}>
         <div className={styles.back_arrow}>
-            <Link href="/Projects">
+            <Link href="/Projects/Projects">
             <div className={styles.arrow}>
                 <Image src={arrowLeftSvg} alt="" />
               </div>
@@ -50,7 +53,7 @@ const ProposePage = () => {
           <div className={styles.page_content}>
             <div className={styles.page_info}>
                   <h1>Proposal by</h1>
-                  <p className={styles.address}>{item[8]}</p>
+                  <p>{item[8]}</p>
 
               {/* <div className={styles.status}>Project</div> */}
             </div>

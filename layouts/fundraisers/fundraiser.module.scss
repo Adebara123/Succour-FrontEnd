@@ -1,5 +1,6 @@
 .fundraiser {
-  padding: 80px 0 37px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   position: relative;
   background: #0E0D0D;
 
@@ -16,36 +17,30 @@
       max-width: calc(100% - 3.75rem);
     }
 
-    
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding-top: 40px;
+      padding-left: 100px;
+      padding-right: 100px;
+
+      //  .project_container {
+
       .fundraiser_header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding-left: 100px;
-          padding-right: 100px;
-         
-        @media (max-width: 43.75em) {
-          align-items: start;
-          flex-direction: column;
-        }
+
 
         .title {
           font-weight: 500;
           font-size: 40px;
           line-height: 145%;
           color: #FFFFFF;
-
-        @media (max-width: 43.75em) {
-          font-size: 18px;
-          margin-bottom: 0.8rem;
-        }
-
         }
 
         .totheright {
-          display: flex;
           cursor: pointer;
-    
+          display: flex;
+          float: right;
+
           .controller_left {
             background: #4C2E4C;
             border-radius: 10px;
@@ -55,6 +50,7 @@
             color: #FFFFFF;
             padding: 10px 15px;
             border: 1px solid #AF4AAF;
+            //  margin-left: 30px;
           }
 
           .icon {
@@ -77,20 +73,6 @@
           }
         }
       }
-
-
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding-top: 30px;
-      padding-left: 100px;
-      padding-right: 100px;
-
-        @media (max-width: 43.75em) {
-         padding-top: 0.2rem;
-        }
 
 
       .fundraiser_grid {
@@ -116,11 +98,6 @@
           border-radius: 10px;
           transition: all 100ms ease-in-out;
 
-          
-        @media (max-width: 43.75em) {
-         width: 258px;
-        }
-
           // Image styling is here ++++++++
           .fundraiser_img {
             height: 10rem;
@@ -134,14 +111,14 @@
             //  padding: 1.875rem 1.875rem 2.5rem 1.875rem;
             padding: 25px;
 
-            // .project_time {
-            //   font-weight: 300;
-            //   font-size: 14px;
-            //   line-height: 165%;
-            //   color: #DDC9DD;
-            //   margin-bottom: 20px;
-            //   text-align: right;
-            // }
+            .project_time {
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 165%;
+              color: #DDC9DD;
+              margin-bottom: 20px;
+              text-align: right;
+            }
 
             .fundraiser_titled {
               font-weight: 600;
@@ -150,10 +127,6 @@
               color: #FFFFFF;
               margin-bottom: 20px;
               text-align: left;
-
-               @media (max-width: 43.75em) {
-                font-size: 16px;
-              }
             }
 
             .fundraiser_desc {
