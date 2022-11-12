@@ -80,23 +80,26 @@ const CreateFunding = () => {
             <div className={styles.top_container}>
               <div className={styles.createfund_container}>
                   <div className={styles.createfund_content}>
-                  <form className={styles.createfund_form}>
+                    <form className={styles.createfund_form}>
                     <div className={styles.title}>Create funding request</div>
-                    {/* <label>Member ID</label>
+                    {/* <label>Member ID</label>z
                     <input id="input" name="input" type="text" /> */}
 
-                    <label>Funding title</label>
+                    <label className={styles.form_field_label}>Funding title</label>
                     <input id="input" name="input" type="text" value={fundname} onChange={(e)=> setFundname(e.target.value)} />
 
                     {/* <label>Project links</label>
                     <input id="input" name="input" type="text" onChange={(e)=> e.target.value}/> */}
 
-                    <label>Amount to be funded</label>
+                    <label className={styles.form_field_label}>Amount to be funded</label>
                     <input id="input" name="input" type="number" value={amountneeded} onChange={(e)=> setAmountneeded(e.target.value)}/>
 
-                    <label>Funding description</label>
-                    <textarea cols={30} rows={5} value={funddesc} onChange={(e)=> setFunddesc(e.target.value)}></textarea>
+                    <label className={styles.form_field_label}>Funding description</label>
+                    <textarea className={styles.textareahere} cols={20} rows={5} value={funddesc} onChange={(e)=> setFunddesc(e.target.value)}></textarea>
+                    
                     {/* <label>Project media</label>
+                
+                    
                     <div className={styles.upload_btn_wrapper}>
                         <div className={styles.cloudsvg}>
                             <div className={styles.icon}>
@@ -215,6 +218,8 @@ const CreateFunding = () => {
                     }
 
                   </form>
+  
+             
               </div>
               </div>
 

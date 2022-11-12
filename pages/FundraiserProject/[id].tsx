@@ -1,14 +1,14 @@
 import {useState} from 'react'
 import styles from './fundraiserproject.module.scss'
 import Navbar from '../../layouts/navbar/Navbar'
-import OtherFundraisers from '../../layouts/otherfundraisers/Otherfundraisers'
+// import OtherFundraisers from '../../layouts/otherfundraisers/Otherfundraisers'
 import Footer from '../../layouts/footer/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
 import arrowLeftSvg from '../../assets/arrow-left.svg'
 import UserIcon from '../../assets/user.svg'
 import DonateModal from '../../layouts/donateModal/DonateModal'
-import AllDonors from '../../layouts/allDonors/AllDonors'
+// import AllDonors from '../../layouts/allDonors/AllDonors'
 import Succour_abi from "../../abi/abi.json"
 import { useContractRead } from 'wagmi'
 import { useRouter } from 'next/router'
@@ -34,22 +34,22 @@ const FundraiserProject = () => {
     }
 
     //handle sharing button
-    const handleShareClick = () => {
-    if (navigator.share) {
-      navigator
-        .share({
-          title: "You are sharing succour information",
-          text: "Hello, please come visit my website",
-          url: "www.website.com.br",
-        })
-        .then(() => {
-          console.log("Successfully shared");
-        })
-        .catch((error) => {
-          console.error("Something went wrong", error);
-        });
-    }
-  };
+  //   const handleShareClick = () => {
+  //   if (navigator.share) {
+  //     navigator
+  //       .share({
+  //         title: "You are sharing succour information",
+  //         text: "Hello, please come visit my website",
+  //         url: "www.website.com.br",
+  //       })
+  //       .then(() => {
+  //         console.log("Successfully shared");
+  //       })
+  //       .catch((error) => {
+  //         console.error("Something went wrong", error);
+  //       });
+  //   }
+  // };
 
   return (
     <>
@@ -63,7 +63,7 @@ const FundraiserProject = () => {
     <div className={styles.wrapper}>
         <div className={styles.left_arrow}>
               <div className={styles.back_arrow}>
-              <Link href="/Viewmore/Viewmore">
+              <Link href="/Viewmore">
               <div className={styles.arrow}>
                   <Image src={arrowLeftSvg} alt="" />
               </div>
@@ -93,6 +93,7 @@ const FundraiserProject = () => {
                   </div>
 
                 </div>
+                
                 <div className={styles.fundraiser_donate_content}>
                   <div className={styles.donate_content}>
                     <h1 className={styles.donate_title}>{(hexToDecimal(item[4]._hex)/1e18).toLocaleString()} cUSD raised of {(hexToDecimal(item[3]._hex)/1e18).toLocaleString()}</h1>
@@ -112,7 +113,7 @@ const FundraiserProject = () => {
                       onClick={openModal}
                       >Donate</button>
 
-                      <button className={styles.share_btn} onClick={handleShareClick}>Share</button>
+                      <button className={styles.share_btn}>Withdraw</button>
 
                     <ul className={styles.donated_people}>
                         <li className={styles.icon}>
@@ -127,9 +128,9 @@ const FundraiserProject = () => {
         </div>
     </div>
   </section>
-      <>
+      {/* <>
       <AllDonors setShowModal={setShowModal} showModal={showModal} />
-      </>
+      </> */}
     {/* <OtherFundraisers /> */}
     <Footer />
     </>

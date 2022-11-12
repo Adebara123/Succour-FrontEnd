@@ -67,7 +67,7 @@ const Navbar = () => {
           <RightContainer>
           <NavbarLinkContainer>
               <Link href="/dao"><NavbarLink>DAO</NavbarLink></Link>
-              <Link href="/Projects/Projects"><NavbarLink>Projects</NavbarLink></Link>
+              <Link href="/Projects"><NavbarLink>Projects</NavbarLink></Link>
               <NavbarLink 
               onClick={openModal}
               >
@@ -171,7 +171,7 @@ const Navbar = () => {
              </Connection>
              {/* End of Custom Connection Button */}
               <NavbarUser>
-              <TiUserOutline color="white" fontSize="1.5rem" onMouseOver={openProfileModal} />
+              <TiUserOutline color="white" fontSize="1.5rem" onClick={openProfileModal} />
               </NavbarUser>
               <OpenLinksButton
                 onClick={() => {setClick((curr : any) => !curr);
@@ -188,11 +188,11 @@ const Navbar = () => {
       { click &&  (
       <NavbarExtendedContainer>
         <NavbarLinkExtended><Link href="/dao">DAO</Link></NavbarLinkExtended>
-        <NavbarLinkExtended><Link href="/Projects/Projects">Projects</Link></NavbarLinkExtended>
+        <NavbarLinkExtended><Link href="/Projects">Projects</Link></NavbarLinkExtended>
         <NavbarLinkExtended onClick={openModal}>Join DAO</NavbarLinkExtended>
         <NavbarLinkExtended><Link href="/Crowdfunding"><NavbarButtonExtended>Crowdfunding</NavbarButtonExtended></Link></NavbarLinkExtended>
         <NavbarUserExtended>
-          <TiUserOutline color="white" fontSize="1.5rem" />
+          <TiUserOutline color="white" fontSize="1.5rem" onClick={openProfileModal} />
         </NavbarUserExtended>
       </NavbarExtendedContainer>
       )}

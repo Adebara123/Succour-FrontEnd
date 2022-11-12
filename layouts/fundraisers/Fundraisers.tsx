@@ -33,30 +33,28 @@ const Projects = () => {
       padding: "1rem"
     }
 
-
-
-
-
-
     return (
           <section className={styles.fundraiser} id="fundraiser">
+            
               <div className={styles.wrapper}>
-                  <div className={styles.container}>
-                  <div className={styles.fundraiser_container}>
-                            <div className={styles.fundraiser_header}>
+                 <div className={styles.fundraiser_header}>
                             <span className={styles.title}>Some fundraisers</span>
                             <div className={styles.totheright}>
 
-                                <Link href="/Viewmore/Viewmore">
+                                <Link href="/Viewmore">
                                   <div className={styles.controller_right}>View all</div>
                                 </Link>
                               <div  className={styles.icon}>
                                 <Image src={arrowRightIcon} alt='' />
                               </div>
 
-                            </div>
-                          </div>
-
+                        </div>
+                        </div>
+                  <div className={styles.container}>
+                      
+                  <div className={styles.fundraiser_container}>
+                         
+              
                       <div className={styles.fundraiser_grid}>
                         {
                           Array.isArray(fundraiser) && fundraiser.length > 0 ? (

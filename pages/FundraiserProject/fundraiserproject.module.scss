@@ -23,6 +23,11 @@
       padding-top: 80px;
       padding-left: 100px;
 
+      
+       @media (max-width: 441px) {
+          padding-left: 1rem;
+        }
+
        .back_arrow {
         display: flex;
         align-items: center;
@@ -43,7 +48,9 @@
 
    .container {
      display: flex;
-     gap: 6.666rem;
+     justify-content: center;
+     align-items: center;
+     gap: 5rem;
      padding-top: 40px;
      padding-left: 100px;
      padding-right: 100px;
@@ -63,17 +70,27 @@
           //    border: 1px solid red;
 
                .fundraiser_img {
-            height: 15rem;
+            height: 12rem;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
-            background: #5E5E5E;
+            background: linear-gradient(92.97deg, rgba(47, 228, 191, 0.71) 32.76%, #6D837E 95.79%);
             max-width: 550px;
             border-radius: 10px 10px 0px 0px;
+
+            @media (max-width: 991px) {
+               width: 400px;
+            }
+
+             @media (max-width: 441px) {
+               width: 300px;
+             }
           }
 
           .fundraiser_text {
                margin-top: 40px;
+
+               
                      
 
                .fundraiser_titled {
@@ -82,6 +99,15 @@
                     line-height: 145%;
                     color: #FFFFFF;
                     max-width: 500px;
+
+
+                    @media (max-width: 991px) {
+                         font-size: 24px;
+                    }
+
+                    @media (max-width: 441px) {
+                         font-size: 18px;
+                    }
                }
 
                .id {
@@ -89,6 +115,14 @@
                     font-size: 20px;
                     line-height: 165%;
                     color: #EBDFEB;
+
+                    @media (max-width: 991px) {
+                         font-size: 14px;
+                    }
+
+                    @media (max-width: 441px) {
+                         font-size: 12px;
+                    }
                }
                .fundraiser_desc {
                     font-weight: 500;
@@ -97,6 +131,10 @@
                     color: #FFFFFF;
                     max-width: 550px;
                     user-select: none;
+
+                     @media (max-width: 441px) {
+                         font-size: 14px;
+                    }
                }
           }
 
@@ -107,14 +145,20 @@
      }
 
      .fundraiser_donate_content {
-        
+            margin-top: auto;
+            margin-bottom: auto;
 
           .donate_content {
                max-width: 560px;
                 background: #030303;
                display: flex;
                flex-direction: column;
-               padding: 2em;
+               width: 400px;
+               padding: 2rem;
+
+               @media (max-width: 441px) {
+                    width: 300px;
+               }
 
                .donate_title {
                     font-weight: 600;

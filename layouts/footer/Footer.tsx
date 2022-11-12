@@ -13,16 +13,21 @@ const Footer = () => {
                <div className={styles.wrapper}>
                     <div className={styles.container}>
                          <div className={styles.footer_menu}>
-                              <div className={styles.footer_title}>
-                                   Ready to get started? Join thousands of others today
-                              </div>
-                         <Link href="/CreateFunding/CreateFunding">
-                              <button className={styles.button}>Create funding requests</button>
-                         </Link>
-                         
-                    </div>
-                    <div className={styles.footer_social}>
+                    
+                          <ul className={styles.footer_social}>
 
+                              <div className={styles.footer_info}>
+                              <div className={styles.footer_title}>
+                                Stay connected on future releases and events
+                              </div>
+                              <Link href="/CreateFunding/CreateFunding">
+                              <button className={styles.button}>Create funding requests</button>
+                                </Link>   
+                              </div>
+                             
+                         
+
+                         <li className={styles.social}>
                          <Link href="#">
                          <div className={styles.social_item}>
                          <Image src={DiscordIcon} alt="Discord" />
@@ -34,8 +39,10 @@ const Footer = () => {
                          <Image src={LinkdedInIcon} alt="Discord" />
                          </div>
                          </Link> 
+                      </li>
 
-                    <Link href="#">
+                      <li className={styles.social}>
+                         <Link href="#">
                          <div className={styles.social_item}>
                          <Image src={DiscordWhiteIcon} alt="Discord" />
                          </div>
@@ -46,9 +53,12 @@ const Footer = () => {
                          <Image src={LinkededInWhiteIcon} alt="Discord" />
                          </div>
                          </Link> 
-                    </div>
+                      </li>
 
-                    <div className={styles.footer_link}>
+
+
+
+                       <li className={styles.footer_link}>
                          <div className={styles.title}>Quick Links</div>
                          <div className={styles.links}>
                          <span className={styles.link}>Home</span>
@@ -56,6 +66,12 @@ const Footer = () => {
                          <span className={styles.link}>DAO</span>
                          <span className={styles.link}>Funding</span>
                          </div>
+                      </li>
+
+                    </ul>
+
+                  
+
                     </div>
                     </div>
                </div>
