@@ -41,7 +41,7 @@ console.log(DAOProposals, "view the contract proposals")
                              <div className={styles.project_header}>
                               <span className={styles.title}>Projects</span>
                               <div className={styles.totheright}>
-                                <Link href="/Projects"><div className={styles.controller_link}>View all projects</div></Link>
+                                <Link href="/Projects/Projects"><div className={styles.controller_link}>View all projects</div></Link>
                               </div>
 
                     <div className={styles.project_grid}>
